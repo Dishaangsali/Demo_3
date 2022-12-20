@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                bat 'docker run -t calibrated_circle'
+                bat 'docker run -d calibrated_circle'
             }
         }
         stage('Authentication') {
